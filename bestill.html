@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<HTML lang="no">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css"> 
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script src="nyttskjema.js" defer></script>
+	<title>Kulturreiser: Romtyper og leiligheter</title>
+</head>
+<body>
+<div class="container opacity col-sm-9 col-12">
+	<div class="jumbotron bg-red text-white jumbotron-fluid">
+		<a href="index.html">
+		<h1  id="headerlink">KULTUR&shy;REISER</h1>
+		</a>
+		<h2 id="tagline">– for deg som vil nyte livet</h2>
+	</div>
+	<nav class="navbar navbar-dark bg-red navbar-expand-lg sticky-top row">
+		<!-- Gjør at knapp (hamburgermeny) dukker opp for å utvide menyen ved liten skjerm. 
+		Ekstra margin på bunnen (mb, margin bottom) på hamburgermenyen når skjermen er svært liten, slik at den ikke kræsjer med søkebaren.-->
+		<button class="navbar-toggler custom-toggler mb-2" data-toggle="collapse" data-target="#navbarCollapse">
+			<span class="navbar-toggler-icon"></span>
+		</button>			
+		<div class="collapse navbar-collapse" id="navbarCollapse">		
+		   <!-- Menyelementer -->
+			<ul class="navbar-nav">
+				<li class="navbar-item mx-5 mx-sm-1">
+					<a href="index.html" class="nav-link">Hjem</a>
+				</li>				
+				<!-- Dropdown-meny -->
+				<li class="nav-item dropdown mx-5 mx-sm-1">
+					<a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" aria-haspopup="true" data-toggle="dropdown" aria-expanded="false">Destinasjoner</a>
+					<div class="dropdown-menu bg-red" aria-labelledby="navbarDropdown">
+					  <a class="dropdown-item nav-link" href="sainttropez.html">St. Tropez</a>
+					  <a class="dropdown-item nav-link" href="roma.html">Roma</a>
+					  <a class="dropdown-item nav-link" href="lisboa.html">Lisboa</a>
+					  <a class="dropdown-item nav-link" href="athen.html">Athen</a>
+					</div>
+				</li>
+				<li class="navbar-item mx-5 mx-sm-1">
+					<a href="romtyper.html" class="nav-link">Romtyper</a>
+				</li>					
+				<li class="navbar-item mx-5 mx-sm-1">
+					<a href="bestill.html" class="nav-link">Bestill reise og opphold</a>
+				</li>									 
+				<li class="navbar-item mx-5 mx-sm-1">
+					<a href="kontakt.html" class="nav-link">Om oss og kontaktinfo</a>
+				</li>
+			</ul>
+		</div>
+		<!-- Søkefelt -->
+		<form class="form-inline">
+			<input class="form-control mr-sm-2 col-sm-9 col-12" type="search" placeholder="Søk..." aria-label="Søk">
+			<span class="input-group-append">
+			<button class="btn btn-light my-1 my-sm-1" type="submit">Søk</button>
+			</span>
+		</form>		
+	</nav>
+	 <!-- JavaScript for å sørge for at menyelementer dukker opp når man trykker på kollapset meny-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<h2 class="destinasjoner">Bestill reise og opphold</h2>
+	<!-- Når skjermen er large eller større vises bildekolonnen og tekstkolonnen med 6 kolonner hver.-->	
+	<div class="row">
+		<div class="col-sm d-flex flex-column mb-4">
+			<div class="d-flex flex-row flex-wrap row">
+				<picture>
+					<img src="bilder/roma.jpg" alt="Symmetrisk oversiktsfoto/skrått helikopterfoto av Roma By."  class="img-fluid">
+				</picture>
+			</div>
+		<h2>Reisekalkulator</h2>
+			<p>Alle valg påvirker total reisepris.</p>
+			<p>Pris er per person, med mindre annet er spesifisert.
+			<p>Hva slags rom ønsker du?
+			<select id="romtype">
+				<option value="0">Velg rom eller leilighet</option>
+				<option value="2000">Singelrom 2000 kr/uke</option>
+				<option value="4000">Dobbeltrom 4000 kr/uke</option>
+				<option value="6000">Familierom(3-5 pers), 6000 kr/uke</option>
+				<option value="3000">Liten leilighet (1 pers) 4000 kr/uke</option>
+				<option value="6000">Medium leilighet (2  pers) 6000 kr/uke</option>
+				<option value="9000">Stor leilighet (3-6 pers) 9000 kr/uke</option>
+			</select>
+			<br>
+			<p>Hvor lenge ønsker du at pakkereisen skal vare?
+			<select id="varighet">
+				<option value="0">Velg ønsket varighet på turen</option>
+				<option value="1">1 uke</option>
+				<option value="2">2 uker</option>
+				<option value="3">3 uker</option>
+				<option value="4">4 uker</option>
+			</select>
+			<br>
+			<p>Hva slags standard ønsker du på rommet?
+			<select id="standard">
+				<option value="0">Velg standard på rommet</option>
+				<option value="0">Budsjett, 0 kr tillegg</option>
+				<option value="1000">Medium oppgradering, 1000 kr tillegg</option>
+				<option value="1500">Alle fasiliteter, 1500 kr tillegg</option>
+			</select>
+			<br>
+			<p>Én person som reiser? 
+			<br>
+			<select id="destinasjonsingel">
+				<option value="0">Velg destinasjon</option>
+				<option value="1500">Roma, 1500 kr</option>
+				<option value="2000">Lisboa, 2000 kr</option>
+				<option value="2500">Hellas, 2500</option>
+				<option value="1000">St. Tropez, 1000</option>
+			</select> 
+			<br>
+			<p>Eller er dere et par som reiser?
+			<br>
+			 <select id="destinasjonpar">
+				<option value="0">Velg destinasjon</option>
+				<option value="3000">Roma, 3000 kr</option>
+				<option value="4000">Lisboa, 4000 kr</option>
+				<option value="5000">Hellas, 5000</option>
+				<option value="2000">St. Tropez, 2000</option>
+			</select> 
+			<br>
+			<p>Eller er dere en familie som skal på tur?
+			<br>
+			<select id="destinasjonfamilie">
+				<option value="0">Velg destinasjon</option>
+				<option value="5500">Roma, 55000 kr</option>
+				<option value="6600">Lisboa, 6600 kr</option>
+				<option value="8000">Hellas, 8000</option>
+				<option value="4500">St. Tropez, 4500</option>
+			</select> 
+			<br>
+			<p>Vaske selv eller betale for vask?
+			<br>
+			<select id="vask">
+				<option value="0">Velg</option>
+				<option value="0">Vaske selv</option>
+				<option value="500">Betale for vask, 500 kr</option>
+			</select>
+			<br>
+			<form>
+				<div>
+					<input type="checkbox" id="medlem" name="ermedlem" value="Er du medlem?">
+					<label for="medlem">Huk av hvis du er medlem hos oss (20% rabatt)</label>
+				</div>
+			  <br>
+			</form> 
+			<h4>Totalpris for din reise:</h4>  
+			<p id="total"></p>
+			<br>		
+		</div>
+		<div class="col-sm d-flex flex-column mb-2">
+			<div class="d-flex flex-row flex-wrap row">
+				<picture>
+					<img src="bilder/romfamilie.jpg" alt="Fotografi av en stor og bred seng med hvitt sengetøy og detaljer i burgunder og kobber. I bakgrunnen ser vi et romslig bad."  class="img-fluid">
+				</picture>
+			</div>
+			<h2>Bestillingsskjema</h2>
+				<p>Bare utfør valgene under, fyll ut kontaktinfo for hver person og trykk bestill!
+				<p>Etter at vi har behandlet din bestilling sender vi deg en faktura. Kun reisende nummer 1 (øverste skjema) får e-postkvittering.
+				<p><strong>Priser gjelder per person med mindre annet er spesifisert!</strong>
+				<p>Obligatoriske felter er markert med * (stjerne).</p>		
+				<p>Er dere mange voksne som skal på tur? Send oss en e-post på kultur@reiser.no, så ordner vi et spesielt tilbud!
+				<form action="http://www.iie.ntnu.no/fag/webutvikling1/prosjekt/behandle.php" method="post">
+					 <br>
+					 <p>Velg romtype*
+					<select name="Romtype" required>
+						<option value="" disabled selected>Velg romtype</option>
+						<option value="Singelrom">Singelrom 2000 kr/uke</option>
+						<option value="Dobbeltrom">Dobbeltrom 4000 kr/uke</option>
+						<option value="Familierom">Familierom(3-5 pers), 6000 kr/uke</option>
+						<option value="Liten leilighet">Liten leilighet (1 pers) 4000 kr/uke</option>
+						<option value="Medium leilighet">Medium leilighet (2  pers) 6000 kr/uke</option>
+						<option value="Stor leilighet">Stor leilighet (3-6 pers) 9000 kr/uke</option>
+					</select>
+					<br>
+					<p>Velg reisens varighet*
+					<select name="Varighet" required>
+						<option value="" disabled selected>Velg antall uker</option>
+						<option value="1 uke">1 uke</option>
+						<option value="2 uker">2 uker</option>
+						<option value="3 uker">3 uker</option>
+						<option value="4 uker">4 uker</option>
+					</select>
+					<br>
+					<p>Velg romstandard (pris per rom, ikke per person)*
+					<select name="Romstandard" required>
+						<option value="" disabled selected>Budsjett, medium eller alle fasiliteter?</option>
+						<option value="Budsjett">Budsjett, 0 kr tillegg</option>
+						<option value="Medium">Medium oppgradering, 1000 kr tillegg</option>
+						<option value="Alle fasiliteter">Alle fasiliteter, 1500 kr tillegg</option>
+					</select>
+					<br>
+					<p>Velg destinasjon*
+					<br>
+					<select name="Destinasjon" required>
+						<option value="" disabled selected>Roma, Lisboa, Hellas eller St. Tropez?</option>
+						<option value="Roma">Roma, 1500 kr</option>
+						<option value="Lisboa">Lisboa, 2000 kr</option>
+						<option value="Hellas">Hellas, 2500 kr</option>
+						<option value="St. Tropez">St. Tropez, 1000 kr</option>
+					</select> 
+					<br>
+					<p>Vaske selv eller betale for vask?*
+					<select name="Vasking" required>
+						<option value="" disabled selected>Velg alternativ</option>
+						<option value="Vaske selv">Vaske selv</option>
+						<option value="Betale for vask">Betale for vask, 500 kr</option>
+					</select>
+					<!--Bestillingsskjema med HTML5 for validering (JavaScript overflødig for validering i dette tilfellet) -->
+					<br>
+					<label for="fornavn">
+						Fornavn*:
+					</label>
+					<input type="text" name="Kundens fornavn" id="fornavn" class="form-control" placeholder="Skriv inn fornavnet ditt" required>	
+					<label for="etternavn">
+						Etternavn*:
+					</label>
+					<input type="text" name="Kundens etternavn" id="etternavn" class="form-control" placeholder="Skriv inn etternavnet ditt" required>
+					<label for="adresse">
+						Adresse*:
+					</label>
+					<input type="text" name="Kundens adresse" id="adresse" class="form-control" placeholder="Skriv inn adressen din" required>
+					<label for="alder">
+						Alder*:
+					</label>
+					<input type="number" name="Kundens alder" id="alder" class="form-control"  placeholder="Skriv inn alderen din, 0-100 år" min="0" max="100" required>
+					<label for="epost">
+						E-postadresse:
+					</label>
+					<input type="email" name="epost" id="epost" class="form-control" placeholder="eksempel@eksempel.com" required>				
+					<div>
+						<input type="checkbox" id="ermedlem" name="Medlemsskap" value="Er medlem">
+						<label for="ermedlem">
+							Huk av hvis du er medlem hos oss (20% rabatt)
+						</label>
+						<input type="hidden" name="Medlemsskap" value="Er ikke medlem">
+					</div>
+					<!--Nullstill skjema-knapp og bestillingsknapp/submit-->
+					<input type="reset" value="Nullstill skjema">
+					<input type="submit" value="Bestill pakkereise">
+				</form>
+		</div>
+	</div>
+	<!--Utvalg av øvrige bilder på nettstedet-->
+	<div class="row">
+		<div class="col-sm d-flex flex-column justify-content-between">
+			<div class="d-flex flex-row flex-wrap row">
+				<picture>
+					<img src="bilder/teater.jpg" alt="Foto av en mørk teaterscene opplyst av lyskastere som danner et stilig sirkelmønster på gulvet."  class="img-fluid">
+				</picture>
+			</div>
+		</div>
+		<div class="col-sm d-flex flex-column justify-content-between kolonne">
+			<div class="d-flex flex-row flex-wrap row">
+				<picture>
+					<img src="bilder/mat.jpg" alt="Foto av et avlangt fat dandert med kikerter, grønnsaker, artisjokk og paprika." class="img-fluid">
+				</picture>
+			</div>
+		</div>
+		<div class="col-sm d-flex flex-column justify-content-between kolonne">
+			<div class="d-flex flex-row flex-wrap row">
+				<picture>
+					<img src="bilder/lisboa2.jpg" alt="Foto av Alfama-distriktet i Lisboa, med fargerike, malte murhus i en skråning."  class="img-fluid">
+				</picture>
+			</div>
+		</div>	
+	</div>
+</div>
+</body>
+</html>
+
+

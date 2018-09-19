@@ -1,0 +1,185 @@
+/*Importert webfont fra Google*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+body {
+	/*Bakgrunnsbilde: Redigert lisensfritt bilde fra publicdomainpictures.com: https://www.publicdomainpictures.net/en/view-image.php?image=168464&picture=bokeh-background */
+	background-image: url("bilder/bakgrunn.jpg");
+		
+	/*Samme bilde fast/fiksert sentrert i bakgrunn ved scrolling + bildet dekker skjerm selv om skjermopploesningen endres.*/
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;  
+	
+}
+
+
+/*Gjennomsiktig container for bedre lesbarhet oppå bakgrunnsbildet*/
+.opacity {
+background: rgba(255, 255, 255, 0.8);
+margin-top: 1rem;
+margin-bottom: 1rem;
+padding-top: 1rem;
+width: 150%;
+
+}
+
+
+/*Styling av "logo" og "tagline"*/
+#headerlink {
+	
+	color: white;
+	
+}
+ 
+
+#tagline {
+	margin-top: 0.1rem;
+	text-align: center;
+	margin-bottom: 2rem;
+	color: white;
+}
+
+
+
+/*Tilpasning av Bootstrap 4-navbar-meny*/
+	/*Endre Bootstrap-klassen bg-red til å ha mørkerød bakgrunnsfarge*/
+.bg-red {
+    background-color: darkred;
+}
+
+	/*Endre tekstfarge i menyen til hvit*/
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+	
+}
+
+	/*Styling av hamburgermenyen som dukker opp ved liten skjerm i navbaren*/
+.custom-toggler.navbar-toggler {
+    border-color: white;
+}
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+
+/*Utseende på lenker*/
+
+.urlitekst {
+	color: darkred;
+	font-weight: bold;
+	
+}
+
+a:hover  {
+	background-color: white;
+	color: darkred;
+	text-decoration: none;
+}
+
+
+a.visited  {
+	color: grey;
+	text-decoration: underline;
+	
+}
+
+/*Overskrift inne på hver destinasjon (eller tilsvarende) sin side  så det blir tydelig hvilken side man er på*/
+.destinasjoner {
+	text-align: center;
+	font-size: 3rem;
+	font-family: "Montserrat";
+	color: black;
+	margin: 2rem;
+	background-color: white;
+	padding: 0.4rem;
+}
+
+/*Stil på overskrifter*/
+
+h1 {
+	text-align: center;
+	font-size: 4rem;
+	font-family: "Montserrat";
+	color: black;
+}
+
+
+h2 {
+	font-size: 2rem;
+	font-family: "Montserrat";
+	color: black;
+	margin-top: 1rem;
+	margin-right: 1rem;
+	margin-left: 1rem;
+}
+
+h3 {
+	font-size: 1.5rem;
+	font-family: "Montserrat";
+	color: black;
+	text-align: center;
+
+}
+
+h4 {
+	font-size: 1.3rem;
+	font-family: "Montserrat";
+	color: black;
+
+}
+
+/*Stil på paragraftekst, labels i skjema og listetekst*/
+
+
+p, label, ul, li {
+	font-size: 1rem;
+	font-family: "Montserrat";
+	color: black;
+	margin-left: 1rem;
+}
+
+/*Lenkene kun i lister får mørkerød farge og understreking, blir grå når de har blitt besøk*/
+
+.liste > a {
+	color: darkred;
+	text-decoration: underline;
+}
+
+.liste > a:visited {
+	color: gray;
+	text-decoration: underline;
+}
+
+
+/*Hvit bakgrunn når musepekeren er over et menyelement eller en knapp*/
+
+.nav-link:hover {
+	color: black !important;
+	background-color: white; 
+}
+
+
+/*Styling av bildegalleri med flexbokser (Bootstrap 4)*/
+	/*Gjennomsiktige kanter på bildene*/	
+
+.d-flex picture {
+  flex: auto;
+  text-align: center;
+}
+
+/*Sentrere kart*/
+.kart {
+text-align: center;
+margin: 0.2rem;
+ padding-bottom: 4rem;
+}
+
+/*Fjerne innrykk i lister, slik at listen ikke havner for langt til høyre i kolonnen når skjermen forminskes*/
+ul {
+    padding: 0;
+	list-style-type: disc;
+	margin-top: -0.8rem;
+}
+

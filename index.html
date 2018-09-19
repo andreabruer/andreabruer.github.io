@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<HTML lang="no">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css"> 
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>				
+	<title>Kulturreiser: Hjem</title>
+</head>
+<body>
+<div class="container opacity col-sm-9 col-12">
+	<div class="jumbotron bg-red text-white jumbotron-fluid">
+		<a href="index.html">
+		<h1  id="headerlink">KULTUR&shy;REISER</h1>
+		</a>
+		<h2 id="tagline">– for deg som vil nyte livet</h2>
+	</div>
+	<nav class="navbar navbar-dark bg-red navbar-expand-lg sticky-top row">
+		<!-- Gjør at knapp (hamburgermeny) dukker opp for å utvide menyen ved liten skjerm. 
+		Ekstra margin på bunnen (mb, margin bottom) på hamburgermenyen når skjermen er svært liten, slik at den ikke kræsjer med søkebaren.-->
+		<button class="navbar-toggler custom-toggler mb-2" data-toggle="collapse" data-target="#navbarCollapse">
+			<span class="navbar-toggler-icon"></span>
+		</button>			
+		<div class="collapse navbar-collapse" id="navbarCollapse">		
+		   <!-- Menyelementer -->
+			<ul class="navbar-nav">
+				<li class="navbar-item mx-5 mx-sm-1">
+					<a href="index.html" class="nav-link">Hjem</a>
+				</li>				
+				<!-- Dropdown-meny -->
+				<li class="nav-item dropdown mx-5 mx-sm-1">
+					<a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" aria-haspopup="true" data-toggle="dropdown" aria-expanded="false">Destinasjoner</a>
+					<div class="dropdown-menu bg-red" aria-labelledby="navbarDropdown">
+					  <a class="dropdown-item nav-link" href="sainttropez.html">St. Tropez</a>
+					  <a class="dropdown-item nav-link" href="roma.html">Roma</a>
+					  <a class="dropdown-item nav-link" href="lisboa.html">Lisboa</a>
+					  <a class="dropdown-item nav-link" href="athen.html">Athen</a>
+					</div>
+				</li>
+				<li class="navbar-item mx-5 mx-sm-1">
+					<a href="romtyper.html" class="nav-link">Romtyper</a>
+				</li>					
+				<li class="navbar-item mx-5 mx-sm-1">
+					<a href="bestill.html" class="nav-link">Bestill reise og opphold</a>
+				</li>									 
+				<li class="navbar-item mx-5 mx-sm-1">
+					<a href="kontakt.html" class="nav-link">Om oss og kontaktinfo</a>
+				</li>
+			</ul>
+		</div>
+		<!-- Søkefelt -->
+		<form class="form-inline">
+			<input class="form-control mr-sm-2 col-sm-9 col-12" type="search" placeholder="Søk..." aria-label="Søk">
+			<span class="input-group-append">
+			<button class="btn btn-light my-1 my-sm-1" type="submit">Søk</button>
+			</span>
+		</form>		
+	</nav>
+	 <!-- Henter script for å sørge for at menyelementer dukker opp når man trykker på kollapset meny-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<!-- Bootstrap 4-grid for å dele opp innholdet i rad med kolonner-->
+	<div class="row">
+				<!-- Når skjermen er større enn extra small vises kolonner ved siden av hverandre fremfor å stables oppå hverandre. Samme løsning på alle undersider, derfor ikke kommentert på alle.-->	
+		<div class="col-sm d-flex flex-column">	 
+		<!--Fleksibel wrapping på div-en (display-flex osv.) og bildene i en egen rad for å sikre responsivitet. Samme løsning på alle undersider.-->
+			<div class="d-flex flex-row flex-wrap row">					
+				<picture>
+					<img src="bilder/leilighetpar.jpg" alt="Fotografi av en dobbeltseng med hvitt sengetøy og røde og grå detaljer."  class="img-fluid">
+				</picture>						
+			</div> 		
+		   <h2>Velg blant elegante rom og leiligheter</h2>
+			<p>Syd-Europa byr på mange spennende destinasjoner. 
+			<p>Du kan velge å reise til:
+			<ul>
+				<li class="liste"><a href="sainttropez.html">St. Tropez</a></li>
+				<li class="liste"><a href="roma.html">Roma</a></li>
+				<li class="liste"><a href="lisboa.html">Lisboa</a></li>
+				<li class="liste"><a href="athen.html">Athen</a></li>
+			</ul>
+			<p>Vi tilbyr pakkereiser som inkluderer rom og leiligheter som passer for både barnefamilier, par og single. 
+
+		</div>
+		<!-- Wrapping for å sørge for at bildet holder seg på samme sted i kolonnen, i flukt med de andre bildene--> 
+		<div class="col-sm d-flex flex-column">	 
+			<div class="d-flex flex-row flex-wrap row">
+				<picture>
+					<img src="bilder/mat.jpg" alt="Foto av et avlangt fat dandert med kikerter, grønnsaker, artisjokk og paprika."  class="img-fluid">
+				</picture>
+			</div>
+		<h2>Nyt fantastisk mat og drikke</h2>
+			<p>Du vil neppe kjede deg på noen av våre reisemål!
+			<p>Du kan velge i massevis av forskjellige gastronomiske aktiviteter på våre destinasjoner!
+			<p> Et lite utvalg:
+			<ul>
+				<!--- Egen klasse for å skille lister i teksten fra liste i navbar-->
+				<li class="liste">Pizzabaking</li>
+				<li class="liste">Vinsmaking</li>
+				<li class="liste">Provence-krydderkurs</li>
+			</ul>
+
+		</div>			
+		<div class="col-sm d-flex flex-column">	 
+			<div class="d-flex flex-row flex-wrap row">
+				<picture>
+					<img src="bilder/konsert.jpg" alt="Foto av personer som spiller fiolin."  class="img-fluid">
+				</picture>
+			</div>
+		<h2>Konserter og forestillinger</h2>
+			<p>Klassisk konsert? Museum?
+			<p>Galleri? Teater? 
+			<p>Byvandring?
+			<p>Opp til deg.
+			<br>
+			<br>
+			<ul>
+			<li  class="liste"><a href="romtyper.html">
+			Se romtyper og leiligheter
+			</a></li>
+			<li  class="liste"><a href="bestill.html" class="liste">
+			Bestill reise og rom
+			</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+</body>
+</html>
+

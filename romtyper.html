@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<HTML lang="no">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css"> 
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>				
+	<title>Kulturreiser: Romtyper og leiligheter</title>
+</head>
+<body>
+<div class="container opacity col-sm-9 col-12">
+	<div class="jumbotron bg-red text-white jumbotron-fluid">
+		<a href="index.html">
+		<h1  id="headerlink">KULTUR&shy;REISER</h1>
+		</a>
+		<h2 id="tagline">– for deg som vil nyte livet</h2>
+	</div>
+	<nav class="navbar navbar-dark bg-red navbar-expand-lg sticky-top row">
+		<!-- Gjør at knapp (hamburgermeny) dukker opp for å utvide menyen ved liten skjerm. 
+		Ekstra margin på bunnen (mb, margin bottom) på hamburgermenyen når skjermen er svært liten, slik at den ikke kræsjer med søkebaren.-->
+		<button class="navbar-toggler custom-toggler mb-2" data-toggle="collapse" data-target="#navbarCollapse">
+			<span class="navbar-toggler-icon"></span>
+		</button>			
+		<div class="collapse navbar-collapse" id="navbarCollapse">		
+		   <!-- Menyelementer -->
+			<ul class="navbar-nav">
+				<li class="navbar-item mx-5 mx-sm-1">
+					<a href="index.html" class="nav-link">Hjem</a>
+				</li>				
+				<!-- Dropdown-meny -->
+				<li class="nav-item dropdown mx-5 mx-sm-1">
+					<a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" aria-haspopup="true" data-toggle="dropdown" aria-expanded="false">Destinasjoner</a>
+					<div class="dropdown-menu bg-red" aria-labelledby="navbarDropdown">
+					  <a class="dropdown-item nav-link" href="sainttropez.html">St. Tropez</a>
+					  <a class="dropdown-item nav-link" href="roma.html">Roma</a>
+					  <a class="dropdown-item nav-link" href="lisboa.html">Lisboa</a>
+					  <a class="dropdown-item nav-link" href="athen.html">Athen</a>
+					</div>
+				</li>
+				<li class="navbar-item mx-5 mx-sm-1">
+					<a href="romtyper.html" class="nav-link">Romtyper</a>
+				</li>					
+				<li class="navbar-item mx-5 mx-sm-1">
+					<a href="bestill.html" class="nav-link">Bestill reise og opphold</a>
+				</li>									 
+				<li class="navbar-item mx-5 mx-sm-1">
+					<a href="kontakt.html" class="nav-link">Om oss og kontaktinfo</a>
+				</li>
+			</ul>
+		</div>
+		<!-- Søkefelt -->
+		<form class="form-inline">
+			<input class="form-control mr-sm-2 col-sm-9 col-12" type="search" placeholder="Søk..." aria-label="Søk">
+			<span class="input-group-append">
+			<button class="btn btn-light my-1 my-sm-1" type="submit">Søk</button>
+			</span>
+		</form>		
+	</nav>
+	 <!-- JavaScript for å sørge for at menyelementer dukker opp når man trykker på kollapset meny-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<h2 class="destinasjoner">Romtyper og leiligheter</h2>
+	
+		<div class="row">
+		<div class="col-sm d-flex flex-column justify-content-between">
+			<h2>Familierom</h2>
+			<p>Våre familierom passer for 3-5 personer. 6000 kr/uke.
+			<div class="d-flex flex-row flex-wrap row">
+				<picture>
+					<img src="bilder/romfamilie.jpg" alt="Fotografi av en stor og bred seng med hvitt sengetøy og detaljer i burgunder og kobber. I bakgrunnen ser vi et romslig bad."  class="img-fluid mb-5">
+				</picture>
+			</div>
+		</div>
+		<div class="col-sm d-flex flex-column justify-content-between">
+			<h2>Dobbeltrom</h2>
+			<p>For deg som er på tur med en venn eller din kjære. 4000 kr/uke.
+			<div class="d-flex flex-row flex-wrap row">
+				<picture>
+					<img src="bilder/rompar.jpg" alt="Foto av et hotellrom i morgenlys.  Hotellrommets vegge er mørkegrå og det er hvitt sengetøy på sengen, samt blomster i en vase."  class="img-fluid mb-5">
+				</picture>
+			</div>
+		</div>
+		<div class="col-sm d-flex flex-column justify-content-between">
+			<h2>Singelrom</h2>
+			<p>Romslige rom for deg som reiser alene. 2000 kr/uke.
+			<div class="d-flex flex-row flex-wrap row">
+					<picture>
+						<img src="bilder/romsingel.jpg" alt="Foto av en hånd som åpner en hotelldør. Bakgrunnen er uklar, men vi skimter en seng, et bord, en taklampe og en vindu i rommet."  class="img-fluid mb-5">
+					</picture>
+			</div>
+		</div>	
+	</div>
+	<div class="row">
+		<div class="col-sm d-flex flex-column justify-content-between">
+			<h2>Familie-leilighet</h2>
+			<p>Våre familieleiligheter er romslige og trivelige. Passer 3-6 personer. 9000 kr/uke.
+			<div class="d-flex flex-row flex-wrap row">
+				<picture>
+					<img src="bilder/leilighetfamilie.jpg" alt="Fotografi av en grå kjøkkenbenk med servant og planter."  class="img-fluid mb-3">
+				</picture>
+			</div>
+		</div>
+		<div class="col-sm d-flex flex-column justify-content-between">
+			<h2>Dobbel-leilighet</h2>
+			<p>For deg som er på tur med en venn eller din kjære. For 2 personer. 6000 kr/uke.
+			<div class="d-flex flex-row flex-wrap row">
+				<picture>
+					<img src="bilder/leilighetpar.jpg" alt="Fotografi av en dobbeltseng med hvitt sengetøy og røde og grå detaljer."  class="img-fluid mb-3">
+				</picture>
+			</div>
+		</div>
+		<div class="col-sm d-flex flex-column justify-content-between kolonne">
+			<h2>Singel-leilighet</h2>
+			<p>For deg som vil ha litt armslag. 4000 kr/uke.
+			<div class="d-flex flex-row flex-wrap row">
+					<picture>
+						<img src="bilder/leilighetsingel.jpg" alt="Nærbilde av en grå hotellseng med sengetøy i beige, lysegrå og mørkebrune striper."  class="img-fluid mb-3">
+					</picture>
+			</div>
+		</div>	
+	</div>
+		<div class="row">
+		<!--Tekstkolonne-->
+		<div class="col-lg">	
+			<h3>Du fortjener det beste!</h3>
+				<p>Derfor har vi identiske romtyper og leiligheter på våre fire destinasjoner. 
+				<p>Alle våre rom har nyoppussede bad og tilgang til internett, aircondition og svømmebasseng. 
+				<p>Prisen på rommene avhenger av blant annet hvor mange dere er, destinasjon og varighet på oppholdet. 
+				<p>Du får 20 % rabatt på bestillingen av både reise og rom hvis du er medlem av Kulturreiser. 
+				<p>Din totalpris på pakkereisen avhenger også av hvorvidt du vil vaske ut eller ei.
+				<p>Du kan regne ut totalpris for din reise med vår reisekalkulator, som du finner på <a href="bestill.html" class="urlitekst">bestillingssiden.</a>			
+				<p>Du kan velge å oppgradere standarden og få tilgang til telefon og fjernsyn, eget kjøkken (leilighet) og inkluderte måltider (rom).
+				<br>
+				<ul>
+					<li  class="liste">
+						<a href="bestill.html" class="liste">
+						Bestill reise og rom
+						</a>
+					</li>
+				</ul>			
+		</div>	
+	</div>
+	<div class="row">
+		<!-- Når skjermen er større enn extra small vises kolonner ved siden av hverandre fremfor å stables oppå hverandre.-->	
+		<div class="col-sm d-flex flex-column">
+			<div class="d-flex flex-row flex-wrap row">
+				<picture>
+					<img src="bilder/basseng.jpg" alt="Bilde av et knallblått basseng innrammet av en treplatting. På treplattingen er solstoler laget av flettekurv."  class="img-fluid">
+				</picture>
+			</div>
+		</div>
+		<div class="col-sm d-flex flex-column">
+			<div class="d-flex flex-row flex-wrap row">
+				<picture>
+					<img src="bilder/bad2.jpg" alt="Foto av et lyst og moderne baderom med beige fliser, høyt badekar og et elegant og moderne utseende."  class="img-fluid">
+				</picture>
+			</div>
+		</div>
+	</div>
+ </div>
+</body>
+</html>

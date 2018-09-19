@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<HTML lang="no">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css"> 
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>				
+	<title>Kulturreiser: St. Tropez</title>
+</head>
+<body>
+<div class="container opacity col-sm-9 col-12">
+	<div class="jumbotron bg-red text-white jumbotron-fluid">
+		<a href="index.html">
+		<h1  id="headerlink">KULTUR&shy;REISER</h1>
+		</a>
+		<h2 id="tagline">– for deg som vil nyte livet</h2>
+	</div>
+	<nav class="navbar navbar-dark bg-red navbar-expand-lg sticky-top row">
+		<!-- Gjør at knapp (hamburgermeny) dukker opp for å utvide menyen ved liten skjerm. 
+		Ekstra margin på bunnen (mb, margin bottom) på hamburgermenyen når skjermen er svært liten, slik at den ikke kræsjer med søkebaren.-->
+		<button class="navbar-toggler custom-toggler mb-2" data-toggle="collapse" data-target="#navbarCollapse">
+			<span class="navbar-toggler-icon"></span>
+		</button>			
+		<div class="collapse navbar-collapse" id="navbarCollapse">		
+		   <!-- Menyelementer -->
+			<ul class="navbar-nav">
+				<li class="navbar-item mx-5 mx-sm-1">
+					<a href="index.html" class="nav-link">Hjem</a>
+				</li>				
+				<!-- Dropdown-meny -->
+				<li class="nav-item dropdown mx-5 mx-sm-1">
+					<a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" aria-haspopup="true" data-toggle="dropdown" aria-expanded="false">Destinasjoner</a>
+					<div class="dropdown-menu bg-red" aria-labelledby="navbarDropdown">
+					  <a class="dropdown-item nav-link" href="sainttropez.html">St. Tropez</a>
+					  <a class="dropdown-item nav-link" href="roma.html">Roma</a>
+					  <a class="dropdown-item nav-link" href="lisboa.html">Lisboa</a>
+					  <a class="dropdown-item nav-link" href="athen.html">Athen</a>
+					</div>
+				</li>
+				<li class="navbar-item mx-5 mx-sm-1">
+					<a href="romtyper.html" class="nav-link">Romtyper</a>
+				</li>					
+				<li class="navbar-item mx-5 mx-sm-1">
+					<a href="bestill.html" class="nav-link">Bestill reise og opphold</a>
+				</li>									 
+				<li class="navbar-item mx-5 mx-sm-1">
+					<a href="kontakt.html" class="nav-link">Om oss og kontaktinfo</a>
+				</li>
+			</ul>
+		</div>
+		<!-- Søkefelt -->
+		<form class="form-inline">
+			<input class="form-control mr-sm-2 col-sm-9 col-12" type="search" placeholder="Søk..." aria-label="Søk">
+			<span class="input-group-append">
+			<button class="btn btn-light my-1 my-sm-1" type="submit">Søk</button>
+			</span>
+		</form>		
+	</nav>
+	 <!-- Henter script for å sørge for at menyelementer dukker opp når man trykker på kollapset meny-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<h2 class="destinasjoner">St. Tropez</h2>
+	<div class="row">
+		<div class="col-sm d-flex flex-column justify-content-between kolonne">
+			<div class="d-flex flex-row flex-wrap row">
+				<!-- Bildekreditering: Starus. Lisens: CC-BY-SA 3.2-->
+				<picture>
+					<img src="bilder/st2.jpg" alt="Fotografi av det berømte klokketårnet i havnen til ST. Tropez på en solskinnsdag. Underdelen er oransje-aktig, og selve toppen med klokke på er malt i en gulfarge. Rundt klokketårnet er mange små hus med oransje takstein. I det fjerne ser vi havnen med båter."  class="img-fluid">
+				</picture>						
+			</div>
+			<h2>Nyt den syd-franske gjestfriheten</h2>
+			<p>Provence er i en klasse for seg når det gjelder krydderier og stemning. 
+			<p>Gå en promenade langs stranden og bryggene. Nyt solnedgangen og det yrende livet.
+			<br>
+			<ul>
+				<li  class="liste">
+					<a href="romtyper.html">
+					Se romtyper og leiligheter
+					</a>
+				</li>
+				<li  class="liste">
+					<a href="bestill.html" class="liste">
+					Bestill reise og rom
+					</a>
+				</li>
+			</ul>
+			<p>La deg rive med av teater og live-musikk, eller se kunst i verdensklasse på museene.
+			<p>Reis på en dagstur til en av vingårdene og ruinene i området.
+			<div class="d-flex flex-row flex-wrap row">
+			<picture>
+			<!-- Bildekreditering: Starus. Lisens: CC-BY-SA 3.2-->
+				<img src="bilder/st1.jpg" alt="Flyfoto av St. Tropez, skrått ovenfra, på en solskinnsdag. Man ser en havn, en del sjø, og mange små bygninger samt vegetasjon."  class="img-fluid">
+			</picture>			
+			</div>
+		</div>
+		<div class="col-sm d-flex flex-column justify-content-between kolonne">
+			<div class="d-flex flex-row flex-wrap row">			 
+				<picture>
+					<img src="bilder/provence.png" alt="Nærbilde av en rødløk, pepperkorn og diverse grønt på en skjærefjøl."  class="img-fluid ">
+				</picture>	
+			</div>
+		    <h2>Kulturelle aktiviteter</h2>
+			<p>Det er masse å se og oppleve i St. Tropez! 
+			<p>Her er noen ressurser hvis du er nysgjerrig på aktiviteter i området:
+			<div class="midstilt">
+				<ul>
+					<li class="liste">
+						<a href="https://www.seesainttropez.com/cultural/guide" target="_blank">
+						Oversikt over museer, teatre, slott og ruiner, konserter ++
+						</a>
+					<li class="liste">
+						<a href="https://theculturetrip.com/europe/france/articles/10-must-try-restaurants-in-san-tropez-riviera-dining/" target="_blank">
+						Gastronomiske opplevelser
+						</a>
+					</li>
+					<li class="liste">
+						<a href="https://www.ruedesvignerons.com/en/ville/vignoble-pres-de-saint-tropez" target="_blank">
+						Vinsmaking i St. Tropez
+						</a>
+					</li>
+				</ul>
+			</div>
+			<p>I resepsjonene våre finner du lokalguider og hefter. 
+			<p>Vi er også alltid behjelpelige med tips! 
+			<div class="d-flex flex-row flex-wrap row">			 
+				<picture>
+					<img src="bilder/vin.jpg" alt="Nærbilde av en klase med druer. Bakgrunnen er uklar, men vi skimter en hekk."  class="img-fluid ">
+				</picture>							
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="kart embed-responsive embed-responsive-21by9">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46488.02914565996!2d6.632071128484692!3d43.2618616588411!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12cec7148316e747%3A0x912a1b632d84b9df!2s83990+Saint-Tropez%2C+Frankrike!5e0!3m2!1sno!2sno!4v1524918838293" width="600" height="450" style="border:0" allowfullscreen>
+			</iframe>
+		</div>
+	</div>
+
+
+</div>
+</body>
+</html>
+
